@@ -17,6 +17,7 @@ Docker Commands
         - i : interactive
         -d : detach
         - t : open tty session
+      -- rm : automatically removes the containter when it exits
 ## stop a  running container
       docker stop web
 ## remove a container
