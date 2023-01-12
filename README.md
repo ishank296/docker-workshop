@@ -37,3 +37,6 @@ Docker Commands
 ## Sample Docker run for PostgreSQL and RabbitMQ
       docker run --name postgres-db -p 5432:5432 -e POSTGRES_PASSWORD=xxxxx -d postgres
       docker run --name rabbit-mq --hostname rmq -p 5672:5672 -p 15672:15672 -e RABBITMQ_DEFAULT_USER=admin -e RABBITMQ_DEFAULT_PASS=xxxxx  -d rabbitmq:3.11-management
+      
+## Docker volumes : local host directory can be mapped to new/existing directory of docker container using -v handle
+      docker run -it --name test1 -v C:\Users\ishan\Documents\docker_test:/data alpine
