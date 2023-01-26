@@ -1,7 +1,11 @@
 # docker-workshop
 Docker-workshop
 
-## reference : https://docker-curriculum.com/#webapps-with-docker
+## reference : 
+- https://docker-curriculum.com/#webapps-with-docker
+- https://github.com/Vizuri/docker-exercises
+- https://learndocker.online/courses/ 
+
 
 Docker Commands
 
