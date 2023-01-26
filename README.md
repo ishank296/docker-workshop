@@ -5,6 +5,7 @@ Docker-workshop
 - https://docker-curriculum.com/#webapps-with-docker
 - https://github.com/Vizuri/docker-exercises
 - https://learndocker.online/courses/ 
+- https://labs.play-with-docker.com/
 
 
 Docker Commands
