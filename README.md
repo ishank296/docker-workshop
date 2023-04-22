@@ -45,3 +45,14 @@ Docker Commands
       
 ## Docker volumes : local host directory can be mapped to new/existing directory of docker container using -v handle
       docker run -it --name test1 -v C:\Users\ishan\Documents\docker_test:/data alpine
+      
+      
+## Docker shorthands with full commands
+
+- docker pull=docker image pull
+- docker create=docker container create
+- docker start=docker container start
+- docker ps=docker container ps
+- docker run=docker create;docker start
+- docker rmi=docker image rm
+- docker rm=docker container rm
