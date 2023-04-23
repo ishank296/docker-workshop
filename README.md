@@ -56,3 +56,16 @@ Docker Commands
 - docker run=docker create;docker start
 - docker rmi=docker image rm
 - docker rm=docker container rm
+
+
+## Dockerfile for python project
+
+- FROM python base image
+- WORKDIR working directory
+- COPY files to container
+- RUN installation of libraries and modules
+- EXPOSE ports
+- ENV environment variables
+- LABEL
+- ENTRYPOINT start-up commands
+- CMD ... and its arguements
