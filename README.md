@@ -69,3 +69,17 @@ Docker Commands
 - LABEL
 - ENTRYPOINT start-up commands
 - CMD ... and its arguements
+
+## Design Principles for Containerized Apps
+
+- One Application or Component per Container
+- Horizontal Scaling
+- Application Observability
+- Security Framework
+- Application Secrets
+- Automated Deployment
+- Immutable and Disposable Containers
+- Application Data in Volumes
+- Virtual Networks
+- Small Container Images
+- Image Tagging
