@@ -83,3 +83,14 @@ Docker Commands
 - Virtual Networks
 - Small Container Images
 - Image Tagging
+
+
+## Image Build Procedure
+
+1. Create Source Code
+2. Create Container with Base Image
+3. Create a Working Directory
+4. Copy source code to Working Dir
+5. Install Libraries and dependencies
+6. Install additional software
+7. Commmit the Container to New Image
