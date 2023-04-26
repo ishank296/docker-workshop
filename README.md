@@ -65,6 +65,7 @@ Docker Commands
 - COPY files to container
 - RUN installation of libraries and modules
 - EXPOSE ports
+- VOLUME declare mount point in container
 - ENV environment variables
 - LABEL
 - ENTRYPOINT start-up commands
