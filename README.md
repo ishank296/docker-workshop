@@ -106,10 +106,12 @@ FROM $BaseImage:$ImageTag
 ENV PYTHONUNBUFFERED 1
 ARG DjangoVersion=2.2.1
 RUN pip install Django==$DjangoVersion
-WORKDIR /code```
+WORKDIR /code
+```
 
 
->>Docker build and run
+>> Docker build and run
+
 ```
 docker build -t django:3.7.3 -f base_image/Dockerfile.mydjango .
 docker run --rm -it django:3.7.3 django-admin version
