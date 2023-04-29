@@ -98,23 +98,23 @@ Docker Commands
 
 
 ## Running Django on container 
->>Dockerfile<<
+>>Dockerfile
 
-ARG BaseImage=python
-ARG ImageTag=3.7.3
-FROM $BaseImage:$ImageTag
-ENV PYTHONUNBUFFERED 1
-ARG DjangoVersion=2.2.1
-RUN pip install Django==$DjangoVersion
-WORKDIR /code
-============================--
+`ARG BaseImage=python`
+`ARG ImageTag=3.7.3`
+`FROM $BaseImage:$ImageTag`
+`ENV PYTHONUNBUFFERED 1`
+`ARG DjangoVersion=2.2.1`
+`RUN pip install Django==$DjangoVersion`
+`WORKDIR /code`
+
 
 Docker build and run
 =====================
-docker build -t django:3.7.3 -f base_image/Dockerfile.mydjango .
-docker run --rm -it django:3.7.3 django-admin version
-docker run --rm -it -v ${PWD}:/code django:3.7.3 django-admin startproject myproject
-docker run --rm -it -v ${PWD}:/code -p 8000:8000 django:3.7.3 python myproject/manage.py migrate
-docker run --rm -it -v ${PWD}:/code -p 8000:8000 django:3.7.3 python myproject/manage.py runserver 0:8000
+`docker build -t django:3.7.3 -f base_image/Dockerfile.mydjango .`
+`docker run --rm -it django:3.7.3 django-admin version`
+`docker run --rm -it -v ${PWD}:/code django:3.7.3 django-admin startproject myproject`
+`docker run --rm -it -v ${PWD}:/code -p 8000:8000 django:3.7.3 python myproject/manage.py migrate`
+`docker run --rm -it -v ${PWD}:/code -p 8000:8000 django:3.7.3 python myproject/manage.py runserver 0:8000`
 
 
